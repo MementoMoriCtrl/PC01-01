@@ -23,7 +23,7 @@ actualizarNotificacion();
 function procesarPedido() {
     const nombre = document.getElementById("nombreCliente").value;
     const producto = document.getElementById("productoSeleccionado").value;
-    const cantidad = document.getElementById("cantidadProducto").value;
+    const cantidad = document.getElementById("cantidadProducto").value || 1;
     const tipo = document.getElementById("tipoPedido").value;
 
     if (nombre === "" || producto === "" || cantidad === "" || tipo === "") {
