@@ -1,7 +1,7 @@
 // --- 1. BARRA DE NOTIFICACIONES
 const mensajesNotificacion = [
     "Pedidos personalizados con 48 horas de anticipación.",
-    "¡Promo! 10% de descuento en tortas esta semana.",
+    "¡Promo: 10% de descuento en tortas esta semana!",
     "Delivery gratis por compras mayores a S/ 50.",
     "Prueba nuestro nuevo Box Dulce de la semana."
 ];
