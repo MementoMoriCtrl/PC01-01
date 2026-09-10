@@ -392,9 +392,36 @@ h3 {
 
 .rejilla-productos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    min-height: 260px;
+}
+
+.tarjeta-producto {
+    overflow: hidden;
+    border-radius: var(--radio);
+    background: var(--color-blanco);
+    box-shadow: var(--sombra-suave);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(77, 45, 38, 0.12);
+}
+
+.tarjeta-producto img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta-producto h3 {
+    margin: 0;
+    padding: 18px 18px 20px;
+    color: var(--color-marron-oscuro);
+    font-size: 17px;
+    text-align: center;
 }
 
 .estado-temporal {
@@ -867,6 +894,11 @@ h3 {
 }
 
 @media (max-width: 650px) {
+
+    .rejilla-productos {
+    grid-template-columns: 1fr;
+    }
+
     .contenedor {
         width: min(calc(100% - 32px), var(--ancho-contenedor));
     }
